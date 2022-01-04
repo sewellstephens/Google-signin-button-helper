@@ -1,0 +1,166 @@
+<head>
+  <title>Google Signin working sample</title>
+<link rel="shortcut icon" type="image/jpg" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVGhD7dmxCcJQFIVh53Ig53GGjOAIjmBrlS6NkEKwsFAQqz/vyhU56nnc8DV/QiCnSJOsVsPUA7Yptim2KbYptim2KbYpdstmvOWP4+GE27+B3dLJjIb95fHM1+1ucekn2Ek1Q4KdVDMk2Ek1Q4KdVDMk2Ek1Q4KdVDMk2Ek1Q4KdVDMk2EmdzPg3bFNsU2xTbFNsU2xTbFNsU2xTbFNsU2y97G+G+bxe3Bti6/U1Y5xx/iNsvZoRY+vVjBhbr2bE2HrPGa+O9z+4sPX6mlHvRgNbr2bE2Ho1I8bWqxkxtl4nMyTYptim2KbYptiOhukOffghpAybrfUAAAAASUVORK5CYII="/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="516292686277-4ptbqbi0ni8octdvi0j8ksd7en757c05.apps.googleusercontent.com">
+    <script async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};handleClientLoad()">
+    <script defer async crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=2520817774797712&autoLogAppEvents=1"></script>
+
+</head>
+  <body>
+  <style>
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+input[type="text"]:focus {
+  box-shadow: 0px 0px 0px 3px rgba(0, 157, 255, 0.4);
+
+}
+select:focus {
+  box-shadow: 0px 0px 0px 3px rgba(0, 157, 255, 0.4);
+
+}
+
+input[type="url"]:focus {
+  box-shadow: 0px 0px 0px 3px rgba(0, 157, 255, 0.4);
+
+}
+input[type="email"]:focus {
+  box-shadow: 0px 0px 0px 3px rgba(0, 157, 255, 0.4);
+
+}
+input[type="number"]:focus {
+  box-shadow: 0px 0px 0px 3px rgba(0, 157, 255, 0.4);
+
+}
+input[type="password"]:focus {
+  box-shadow: 0px 0px 0px 3px rgba(0, 157, 255, 0.4);
+
+}
+.center {
+  display: inline-block;
+  white-space: nowrap;
+}
+#customBtn {
+  -webkit-touch-callout: none; /* Button style to change */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #999997;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 50px;
+  transition: 0.4s;
+}
+#customBtn:focus {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Old versions of Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px solid #999997;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #ebebeb;
+  color: black;
+  width: 100%;
+  height: 50px;
+  transition: 0.4s;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Old versions of Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+   user-select: none; /* Non-prefixed version, currently
+}
+</style>
+
+<script>	  
+
+      var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '516292686277-4ptbqbi0ni8octdvi0j8ksd7en757c05.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+
+     var show = document.getElementById("text");
+        var profile = googleUser.getBasicProfile();
+        
+        
+
+        if(!signedin){
+        
+          //profile information to send over
+          
+          var id = profile.getId();
+          var email = profile.getEmail();
+          var firstname = profile.getGivenName();
+          var lastname = profile.getFamilyName();
+          
+          //profile picture if nessesary
+          
+          var image = profile.getImageUrl();
+          
+           var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut();
+
+           
+        }                
+              googleUser.getBasicProfile().getName();
+        }, function(error) {
+          
+        });
+  };
+
+  var signedin = true; 
+
+      function signin(){
+        signedin = false
+      };
+
+    </script>
+
+
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script>startApp();</script>
+<!-- Actual button -->
+<button class="center" id="customBtn" onclick="signin()"><img src="asset-toolkit/g-logo.png" style="vertical-align: middle;" width="28" height="28">&nbsp;&nbsp;&nbsp; Sign in with Google</button>
