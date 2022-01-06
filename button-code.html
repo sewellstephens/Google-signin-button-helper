@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <meta name="google-signin-scope" content="profile email">
-    <meta name="516292686277-4ptbqbi0ni8octdvi0j8ksd7en757c05.apps.googleusercontent.com">
+    <meta name="ADD_CLIENT_ID_HERE">
     <script async defer src="https://apis.google.com/js/api.js"
         onload="this.onload=function(){};handleClientLoad()">
     <script defer async crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=2520817774797712&autoLogAppEvents=1"></script>
@@ -108,7 +108,7 @@ input[type="password"]:focus {
     gapi.load('auth2', function(){
       // Retrieve the singleton for the GoogleAuth library and set up the client.
       auth2 = gapi.auth2.init({
-        client_id: '516292686277-4ptbqbi0ni8octdvi0j8ksd7en757c05.apps.googleusercontent.com',
+        client_id: 'ADD_CLIENT_ID_HERE',
         cookiepolicy: 'single_host_origin',
         // Request scopes in addition to 'profile' and 'email'
         //scope: 'additional_scope'
