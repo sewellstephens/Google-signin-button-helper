@@ -21,62 +21,65 @@ I see it all. Google makes it hard to figure out how to add custom button especi
  --
  
  Step 1:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-1.png)
+ ![Image](https://cdn.sewellstephens.com/step-1.png)
  
  Step 2:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-2.png)
+ ![Image](https://cdn.sewellstephens.com/step-2.png)
  
  Step 3:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-3.png)
+ ![Image](https://cdn.sewellstephens.com/step-3.png)
  
  Step 4:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-4.png)
+ ![Image](https://cdn.sewellstephens.com/step-4.png)
  
  Step 5:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-5.png)
+ ![Image](https://cdn.sewellstephens.com/step-5.png)
  
  Step 6:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-6.png)
+ ![Image](https://cdn.sewellstephens.com/step-6.png)
  
  Step 7:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-7.png)
+ ![Image](https://cdn.sewellstephens.com/step-7.png)
  
  Step 8:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-8.png)
+ ![Image](https://cdn.sewellstephens.com/step-8.png)
  
  Step 9:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-9.png)
+ ![Image](https://cdn.sewellstephens.com/step-9.png)
  
  Step 10:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-10.png)
+ ![Image](https://cdn.sewellstephens.com/step-10.png)
  
  Step 11:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-11.png)
+ ![Image](https://cdn.sewellstephens.com/step-11.png)
  
  Step 12:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-12.png)
+ ![Image](https://cdn.sewellstephens.com/step-12.png)
  
  Step 13:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-13.png)
+ ![Image](https://cdn.sewellstephens.com/step-13.png)
  
  Step 14:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-15.png)
+ ![Image](https://cdn.sewellstephens.com/step-15.png)
+ 
+ Step 15:
+ ![Image](https://cdn.sewellstephens.com/step-16.png)
  
  Step 16:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-17.png)
+ ![Image](https://cdn.sewellstephens.com/step-17.png)
  
  Step 17:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-18.png)
+ ![Image](https://cdn.sewellstephens.com/step-18.png)
  
  Step 18:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-19.png)
+ ![Image](https://cdn.sewellstephens.com/step-19.png)
  
  Step 19:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-20.png)
+ ![Image](hhttps://cdn.sewellstephens.com/step-20.png)
  
  Step 20:
- ![Image](https://raw.githubusercontent.com/sewellstephens/Google-signin-button-helper/master/step-21.png)
+ ![Image](https://cdn.sewellstephens.com/step-21.png)
  
  --
  
- Made by [Sewell Stephens](https://sewellstephens.com)
+ Created by [Sewell Stephens](https://sewellstephens.com)
