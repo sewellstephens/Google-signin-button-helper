@@ -75,7 +75,7 @@ I see it all. Google makes it hard to figure out how to add custom button especi
  ![Image](https://cdn.sewellstephens.com/step-19.png)
  
  Step 19:
- ![Image](hhttps://cdn.sewellstephens.com/step-20.png)
+ ![Image](https://cdn.sewellstephens.com/step-20.png)
  
  Step 20:
  ![Image](https://cdn.sewellstephens.com/step-21.png)
