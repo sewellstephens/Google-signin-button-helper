@@ -82,4 +82,4 @@ I see it all. Google makes it hard to figure out how to add custom button especi
  
  --
  
- Created by [Sewell Stephens](https://sewellstephens.com)
+ Made by [Sewell Stephens](https://sewellstephens.com)
